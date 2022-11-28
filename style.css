@@ -1,0 +1,41 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aqua;
+    margin: 100px;
+}
+
+th , td{
+    text-align: center;
+    padding: 5px 20px;
+    border: solid 1px black;
+}
+
+#categoria , #data , #nome , #valor {
+    margin-top: 20px;
+} 
+
+input , select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: gray;
+}
+
+button:hover{
+    background-color: white;
+    box-shadow: 5px 5px 5px grey;
+    transition: .5s;
+
+}

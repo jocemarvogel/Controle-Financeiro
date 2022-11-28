@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+
+    <script src="./javascript/dados.js" defer></script>
+    <script src="./javascript/script.js" defer></script>
+
+    <title>Controle Financeiro</title>
+</head>
+
+<body>
+    <h1>Controle Financeiro</h1>
+    <h3>Saldo</h3>
+
+    <table  class="informacoesCadastradas">
+        <thead>
+            <tr >
+                <th>NOME</th>
+                <th>DATA</th>
+                <th>CATEGORIA</th>
+                <th>VALOR</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <form action="" id="formulario">
+        <label for="nome">NOME:
+            <input type="text" id="nome" name="nome">
+        </label><br>
+
+        <label for="data">DATA:
+            <input type="date" id="data" name="data">
+        </label><br>
+
+        <label for="categoria" >CATEGORIA:
+            <select id="categoria" name="categoria">
+                <option id="saude">SAUDE</option>
+                <option id="transporte">TRANSPORTE</option>
+                <option id="moradia">MORADIA</option>
+                <option id="educacao">EDUCAÇÃO</option>
+                <option id="financeiro">FINANCEIRO</option>
+            </select>
+        </label><br>
+
+        <label for="valor" >VALOR:
+            <input type="text" id="valor" name="valor">
+        </label>
+        <br>
+   
+        <BUtton type="submit" class="btn-enviarDados">ENVIAR</BUtton>
+    </form>
+
+    
+
+
+</body>
+
+</html>
