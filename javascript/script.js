@@ -1,3 +1,4 @@
+
 var enviar = document.querySelector(".btn-enviarDados");
 enviar.addEventListener("click", function (event) {
     event.preventDefault();
@@ -24,10 +25,8 @@ enviar.addEventListener("click", function (event) {
     var tabelaGastos = document.querySelector(".informacoesCadastradas").querySelector("tbody");
     tabelaGastos.appendChild(linhaDados);
     dados
-
-    console.log(dataEscolhida)
-    console.log(dataEscolhida)
 });
+
 
 
 
