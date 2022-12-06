@@ -2,8 +2,9 @@ var saldo = Number(prompt("Qual o valor do saldo atual?"));
 var textoSaldo = document.querySelector("#textoSaldo");
 textoSaldo.textContent = saldo.toLocaleString(`pt-br`, { style: `currency`, currency: `BRL` });
 
-var enviar = document.querySelector(".btn-enviarDados");
+document.querySelector("#nome").focus();
 
+var enviar = document.querySelector(".btn-enviarDados");
 enviar.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -13,11 +14,6 @@ enviar.addEventListener("click", function (event) {
     var tdValor = document.querySelector(".td-valor");
 
     var form = document.querySelector("#formulario")
-    //var nome = document.querySelector("#nome").value;
-    // var data = (document.querySelector("#data").value).replace(/(\d*)-(\d*)-(\d*).*/, `$3/$2/$1`);
-    //var categoria = document.querySelector("#categoria").value;
-    //var valorDespesa = Number(document.querySelector("#valor").value);
-    //var valorDespesaMonetario = valorDespesa.toLocaleString(`pt-br`, { style: `currency`, currency: `BRL` })
 
     var dadosDespesa = coletaDadosDespesasFormuladio(form)
 
@@ -51,38 +47,14 @@ enviar.addEventListener("click", function (event) {
         return linhaDados;
     }
 
-    function montaTd(dado){
+    function montaTd(dado,classe){
         var td = document.createElement("td");
         td.textContent = dado;
-    //    add.classList.add(classe);
+        td.classList.add(classe);
         return td;
     }
 
-    /*
-        var linhaDados = document.createElement("tr");
-    
-        var celulaNome = document.createElement("td");
-        var celulaData = document.createElement("td");
-        var celulaCategoria = document.createElement("td");
-        var celulaValor = document.createElement("td");
-    
-        celulaNome.textContent = nome;
-        celulaData.textContent = data;
-        celulaCategoria.textContent = categoria;
-        celulaValor.textContent = valorDespesaMonetario;
-    
-        linhaDados.appendChild(celulaNome);
-        linhaDados.appendChild(celulaData);
-        linhaDados.appendChild(celulaCategoria);
-        linhaDados.appendChild(celulaValor);
-    
-        var tabelaGastos = document.querySelector(".informacoesCadastradas").querySelector("tbody");
-        tabelaGastos.appendChild(linhaDados);
-        
-        var saldoTotal = saldo - valorDespesa;
-        textoSaldo.textContent = saldoTotal.toLocaleString(`pt-br`, { style: `currency`, currency: `BRL` });
-    
-    */
+    document.querySelector(".informacoesCadastradas").style.display = "block";
 })
 
 

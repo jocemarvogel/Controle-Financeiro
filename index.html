@@ -14,13 +14,14 @@
 </head>
 
 <body>
-    <h1>Controle Financeiro</h1>
+    <header>
+        <h1>Controle Financeiro</h1>
+    </header>
     <div id="saldo">
-        <h3>Saldo: <span id="textoSaldo"></span></h3>
-
+        <h3>SALDO:</h3><span id="textoSaldo"></span>
     </div>
 
-    <table class="informacoesCadastradas">
+    <table class="informacoesCadastradas" style="display: none;">
         <thead>
             <tr>
                 <th>NOME</th>
@@ -36,11 +37,11 @@
     <form action="" id="formulario">
         <label for="nome">NOME:
             <input type="text" id="nome" name="nome">
-        </label><br>
+        </label>
 
         <label for="data">DATA:
             <input type="date" id="data" name="data">
-        </label><br>
+        </label>
 
         <label for="categoria">CATEGORIA:
             <select id="categoria" name="categoria">
@@ -50,12 +51,11 @@
                 <option id="educacao">EDUCAÇÃO</option>
                 <option id="financeiro">FINANCEIRO</option>
             </select>
-        </label><br>
+        </label>
 
         <label for="valor">VALOR:
             <input type="text" id="valor" name="valor">
         </label>
-        <br>
 
         <BUtton type="submit" class="btn-enviarDados">ENVIAR</BUtton>
     </form>
