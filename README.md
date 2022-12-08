@@ -6,7 +6,9 @@ A intenção deste projeto é desenvolver uma aplicação web para controle fina
 Como meus conhecimentos em programação são básicos, tenho me dedicado a aprender mais sobre javascript afim de alterar ou simplificar a forma como vou escrevendo o código. Tenho aprendido  javascript através de cursos no youtube, grupos no discord e paginas web como w3school ,  freecodecamp , sendo assim **cintasse a vontade para dar dicas de como posso melhorar.**
 
 ### Momento atual do projeto:
-Até este momento consegui adicionar um valor de saldo através de um prompt, e criar uma linha de dados na tabela toda vez que é enviado os dados do formulário, assim como deixar a pagina minimamente estilizada e com o Html organizado.
+
+Atualmente a pagina esta como mostrado na imagem abaixo:
+<img src="./img/versao_08_12_2022.png">
 
 ### Principais desafios até o momento:
 Como mencionei, estou aprendendo a programar em Javascript, já tenho compreensão sobre variáveis e seus escopos assim como funções e inclusão de parâmetros nas mesmas, mas passei por alguns problemas ao criar o evento (*addEventListener*) assim como apesar de compreender o que é um objeto em javascrip sinto dificuldades de escrever isso num código e "buscar" esses parâmetros em outros momentos.
@@ -20,6 +22,7 @@ Como mencionei, estou aprendendo a programar em Javascript, já tenho compreens�
  - [ ] Capturar dados do formulário de receita.
  - [ ] Armazenar dados de despesas e receitas (*array*)?
  - [ ] Somar valores de despesa e receitas.
+ - [ ] Adicionar icone a tabela para vizualizar se é receita ou despesa.
  - [ ] Validar dados do formulário.
  - [ ] Subtrair despesas do saldo.
  - [ ] Opção de apagar linha da tabela.
