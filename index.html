@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <!--    <script src="./javascript/dados.js" defer></script>  -->
-    <script src="./javascript/script.js" defer></script>
+    <script src="./javascript/selectFormulario.js" defer></script>
+    <script src="./javascript/addDespesa.js" defer></script>
 
     <title>Controle Financeiro</title>
 </head>
@@ -21,44 +22,82 @@
         <h3>SALDO:</h3><span id="textoSaldo"></span>
     </div>
 
-    <table class="informacoesCadastradas" style="display: none;">
-        <thead>
-            <tr>
-                <th>NOME</th>
-                <th>DATA</th>
-                <th>CATEGORIA</th>
-                <th>VALOR</th>
-            </tr>
-        </thead>
-        <tbody id="tabela-dadosDespesas">
-        </tbody>
-    </table>
+    <div class="informaçoes">
+        <div class="selecaoFormulario">
+            <div class="inputRadio">
+                <input type="radio" id="adicinarDespesa" onclick="if(this.checked){mostrarFormularioDespesa()}" name="selecaoFormulario" >
+                <label>Adicionar Despesa</label>
+                <br>
+                <input type="radio" id="adicinarReceita" onclick="if(this.checked){mostrarFormularioReceita()}" name="selecaoFormulario">
+                <label>Adicionar Receita</label>
+            </div>
 
-    <form action="" id="formulario">
-        <label for="nome">NOME:
-            <input type="text" id="nome" name="nome">
-        </label>
+<!--        <button type="submit" id="enviarSelecaoFormulario">SELECIONAR</button>  -->
+        
 
-        <label for="data">DATA:
-            <input type="date" id="data" name="data">
-        </label>
+            <form action="" id="formularioDespesa" style="display: none;">
+                <label for="nome">NOME:
+                    <input type="text" id="nome" name="nome">
+                </label>
 
-        <label for="categoria">CATEGORIA:
-            <select id="categoria" name="categoria">
-                <option id="saude">SAUDE</option>
-                <option id="transporte">TRANSPORTE</option>
-                <option id="moradia">MORADIA</option>
-                <option id="educacao">EDUCAÇÃO</option>
-                <option id="financeiro">FINANCEIRO</option>
-            </select>
-        </label>
+                <label for="data">DATA:
+                    <br>
+                    <input type="date" id="data" name="data">
+                </label>
 
-        <label for="valor">VALOR:
-            <input type="text" id="valor" name="valor">
-        </label>
+                <label for="categoria">CATEGORIA:
+                    <select id="categoria" name="categoria">
+                        <option id="saude">SAUDE</option>
+                        <option id="transporte">TRANSPORTE</option>
+                        <option id="moradia">MORADIA</option>
+                        <option id="educacao">EDUCAÇÃO</option>
+                        <option id="financeiro">FINANCEIRO</option>
+                    </select>
+                </label>
 
-        <BUtton type="submit" class="btn-enviarDados">ENVIAR</BUtton>
-    </form>
+                <label for="valor">VALOR:
+                    <input type="text" id="valor" name="valor">
+                </label>
+
+                <BUtton type="submit" class="btn-enviarDados">ENVIAR</BUtton>
+            </form>
+
+            <form action="" id="formularioReceita" style="display: none;">
+               <label for="">NOME:
+                    <Input type="text" id="nomeReceita" name=""></Input>
+               </label>
+               
+               <label for="">DATA:
+                    <input type="date" id="dataReceita" name="">
+               </label>
+
+               <label for="">CATEGORIA:
+                    <select name="" id="">
+                        <option value="salario">SALARIO</option>
+                        <OPtion value="investimento">INVESTIMENTO</OPtion>
+                    </select>
+               </label>
+
+               <label for=""> VALOR:
+                    <input type="text" name="valorReceita" id="valorReceita">
+               </label>
+            </form>
+        </div>
+
+        <table class="informacoesCadastradas" style="display: block;">
+            <thead>
+                <tr>
+                    <th>NOME</th>
+                    <th>DATA</th>
+                    <th>CATEGORIA</th>
+                    <th>VALOR</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dadosDespesas">
+            </tbody>
+        </table>
+
+    </div>
 </body>
 
 </html>

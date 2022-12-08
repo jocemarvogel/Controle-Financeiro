@@ -1,8 +1,3 @@
-var saldo = Number(prompt("Qual o valor do saldo atual?"));
-var textoSaldo = document.querySelector("#textoSaldo");
-textoSaldo.textContent = saldo.toLocaleString(`pt-br`, { style: `currency`, currency: `BRL` });
-
-document.querySelector("#nome").focus();
 
 var enviar = document.querySelector(".btn-enviarDados");
 enviar.addEventListener("click", function (event) {
@@ -13,7 +8,7 @@ enviar.addEventListener("click", function (event) {
     var tdCategoria = document.querySelector(".td-categoria");
     var tdValor = document.querySelector(".td-valor");
 
-    var form = document.querySelector("#formulario")
+    var form = document.querySelector("#formularioDespesa")
 
     var dadosDespesa = coletaDadosDespesasFormuladio(form)
 

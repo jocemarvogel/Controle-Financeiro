@@ -14,10 +14,13 @@ Como mencionei, estou aprendendo a programar em Javascript, já tenho compreens�
 ## Atualizações:
 
  - [x] Estilizar a pagina.
- - [x] Capturar dados do formulário.
+ - [X] Criar formulario para adicionar despesas.
+ - [x] Capturar dados do formulário de depesa.
+ - [X] Criar formulario para adicionar receita.
+ - [ ] Capturar dados do formulário de receita.
+ - [ ] Armazenar dados de despesas e receitas (*array*)?
+ - [ ] Somar valores de despesa e receitas.
  - [ ] Validar dados do formulário.
- - [ ] Criar botão para adicionar receita.
- - [ ] Armazenar dados de despesas (*array*)?
  - [ ] Subtrair despesas do saldo.
  - [ ] Opção de apagar linha da tabela.
  - [ ] Criar *Select* para Subcategoria.
@@ -29,8 +32,5 @@ Minhas duvidas para próximas atualizações:
 
  - Criar *arrays* para armazenar dados de despesas é uma opção valida?
  - Como posso criar o *select* para subcategoria? Estou pensando em usar *while* , alterando o *style = display : none / block* .
- - Pretendo usar *input Radio* para selecionar se os dados são de despesa ou de  receita
 
-  
-
-Ultima atualização 05/12/2022
+Ultima atualização 07/12/2022.
