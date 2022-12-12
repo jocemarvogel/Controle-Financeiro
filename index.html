@@ -10,6 +10,7 @@
     <!--    <script src="./javascript/dados.js" defer></script>  -->
     <script src="./javascript/selectFormulario.js" defer></script>
     <script src="./javascript/addDespesa.js" defer></script>
+    <script src="./javascript/addReceita.js" defer></script>
 
     <title>Controle Financeiro</title>
 </head>
@@ -25,10 +26,11 @@
     <div class="informaçoes">
         <div class="selecaoFormulario">
             <div class="inputRadio">
-                <input type="radio" id="adicinarDespesa" onclick="if(this.checked){mostrarFormularioDespesa()}" name="selecaoFormulario" >
+                
+                <input type="radio" id="adicinarDespesa" name="selecaoFormulario" onclick="checar()" >
                 <label>Adicionar Despesa</label>
                 <br>
-                <input type="radio" id="adicinarReceita" onclick="if(this.checked){mostrarFormularioReceita()}" name="selecaoFormulario">
+                <input type="radio" id="adicinarReceita" name="selecaoFormulario" onclick="checar()">
                 <label>Adicionar Receita</label>
             </div>
 
@@ -59,7 +61,7 @@
                     <input type="text" id="valor" name="valor">
                 </label>
 
-                <BUtton type="submit" class="btn-enviarDados">ENVIAR</BUtton>
+                <button type="submit" class="btn-enviarDadosDespesa">ENVIAR</button>
             </form>
 
             <form action="" id="formularioReceita" style="display: none;">
@@ -72,16 +74,22 @@
                </label>
 
                <label for="">CATEGORIA:
-                    <select name="" id="">
-                        <option value="salario">SALARIO</option>
-                        <OPtion value="investimento">INVESTIMENTO</OPtion>
+                    <select name="" id="categoriaReceita">
+                        <option value="Salario">SALARIO</option>
+                        <option value="Ferias">FERIAS</option>
+                        <option value="13°Salario">13° SALARIO</option>
+                        <OPtion value="Investimento">INVESTIMENTO</OPtion>
+
                     </select>
                </label>
+               
 
                <label for=""> VALOR:
                     <input type="text" name="valorReceita" id="valorReceita">
                </label>
-            </form>
+            
+               <button type="submit" id="btn-enviarDadosReceita">ENVIAR</button>
+            </form>   
         </div>
 
         <table class="informacoesCadastradas" style="display: block;">
@@ -93,7 +101,7 @@
                     <th>VALOR</th>
                 </tr>
             </thead>
-            <tbody id="tabela-dadosDespesas">
+            <tbody id="tabela-dados">
             </tbody>
         </table>
 

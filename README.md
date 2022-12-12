@@ -19,10 +19,10 @@ Como mencionei, estou aprendendo a programar em Javascript, já tenho compreens�
  - [X] Criar formulario para adicionar despesas.
  - [x] Capturar dados do formulário de depesa.
  - [X] Criar formulario para adicionar receita.
- - [ ] Capturar dados do formulário de receita.
+ - [x] Capturar dados do formulário de receita.
  - [ ] Armazenar dados de despesas e receitas (*array*)?
  - [ ] Somar valores de despesa e receitas.
- - [ ] Adicionar icone a tabela para vizualizar se é receita ou despesa.
+ - [x] Adicionar cor a tabela para vizualizar se é receita ou despesa.
  - [ ] Validar dados do formulário.
  - [ ] Subtrair despesas do saldo.
  - [ ] Opção de apagar linha da tabela.
