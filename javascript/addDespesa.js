@@ -25,7 +25,7 @@ enviarDadosDespesa.addEventListener("click", function (adicionarDespesa) {
             nomeDespesa: formDespesa.nome.value,
             dataDespesa: (formDespesa.data.value).replace(/(\d*)-(\d*)-(\d*).*/, `$3/$2/$1`),
             categoriaDespesa: formDespesa.categoria.value,
-            valorDespesa: Number(formDespesa.valor.value),
+            valorDespesa: parseFloat((formReceita.valorReceita.value).replace(`,`,`.`)),
         }
         return dadosDespesa;
     }
